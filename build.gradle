@@ -1,0 +1,45 @@
+buildscript {
+    ext.kotlin_version = '1.5.30'
+
+    repositories {
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.1.0'
+        classpath 'com.google.gms:google-services:4.3.10'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+subprojects {
+    configurations.all {
+        resolutionStrategy {
+            forcedModules = [
+                    "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+                    "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+            ]
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+        maven { url "https://www.jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+task installGitHook(type: Copy) { // Q1: What does this task do?
+    from new File(rootProject.rootDir, '.hooks/pre-commit')
+    into { new File(rootProject.rootDir, '.git/hooks') }
+    fileMode 0755
+}
+
+tasks.getByPath(':app:preBuild').dependsOn installGitHook
