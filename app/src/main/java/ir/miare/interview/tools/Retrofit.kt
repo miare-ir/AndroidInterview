@@ -1,4 +1,4 @@
-package ir.alilo.interview.tools
+package ir.miare.interview.tools
 
 import retrofit2.Retrofit
 
@@ -8,7 +8,7 @@ class Libraries {
         .build()
 
     fun updateMyLocation(location: Location) {
-        // Q9: Can we update the location asynchronously with 15 seconds of read time out?
+        // Q8: Can we update the location asynchronously with 15 seconds of read time out?
     }
 }
 
@@ -35,6 +35,6 @@ interface LocationAPI {
          *                    "error": "invalid_location"
          *                  }
          */
-        // Q8: Can we implement the above API here
+        // Q7: Can we implement the above API here
     }
 }

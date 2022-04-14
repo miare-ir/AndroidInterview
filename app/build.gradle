@@ -12,11 +12,10 @@ apply plugin: 'kotlin-parcelize'
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "ir.alilo.interview"
-        minSdkVersion 16
+        applicationId "ir.miare.interview"
+        minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -59,7 +58,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     // [Anko](https://github.com/Kotlin/anko)
-    implementation "org.jetbrains.anko:anko-common:$anko_version"
+    implementation "org.jetbrains.anko:anko-commons:$anko_version"
 
     // [Material Design](https://material.io/develop/android)
     implementation 'com.google.android.material:material:1.2.1'

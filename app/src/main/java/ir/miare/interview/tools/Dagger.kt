@@ -1,4 +1,4 @@
-package ir.alilo.interview.tools
+package ir.miare.interview.tools
 
 import dagger.Module
 import dagger.Provides
@@ -20,5 +20,5 @@ class Complicated
 class Big(complicated: Complicated, expensive: Expensive)
 
 class Client {
-    // Q14: Can we inject an instance of "Big" class here?
+    // Q13: Can we inject an instance of "Big" class here?
 }

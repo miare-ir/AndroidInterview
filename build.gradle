@@ -3,10 +3,11 @@ buildscript {
 
     repositories {
         mavenCentral()
+        jcenter()
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.1.0'
+        classpath 'com.android.tools.build:gradle:7.1.1'
         classpath 'com.google.gms:google-services:4.3.10'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
@@ -27,6 +28,7 @@ subprojects {
 allprojects {
     repositories {
         mavenCentral()
+        jcenter()
         google()
         maven { url "https://www.jitpack.io" }
     }
@@ -36,7 +38,7 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-task installGitHook(type: Copy) { // Q1: What does this task do?
+task installGitHook(type: Copy) {
     from new File(rootProject.rootDir, '.hooks/pre-commit')
     into { new File(rootProject.rootDir, '.git/hooks') }
     fileMode 0755

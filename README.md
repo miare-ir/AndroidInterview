@@ -2,38 +2,38 @@
 ######  We have an interview, yay
 
 ### TL;DR
-Clone this project, open it in Android Studio, install **GitLive**, sign-in to it.
+
+Clone this project, open it in Android Studio and build it.
 
 #### What is this?
-This project is sort of a playground for you. It has a bunch of useful stuff which will be used in the interview process, feel free to explore it (it's not cheating).
+
+This project is sort of a playground for you. It has a bunch of useful stuff which will be used in
+the interview process, feel free to explore it (it's not cheating).
 
 #### What do I do with this?
-- Clone it
-- Open it in Android Studio
-- Let it download its dependencies
-- Make the project once (since we have some intermediate classes which need to be generated)
 
-#### Then what?
-You need to install [GitLive](https://git.live/) on your Android Studio. We'll use it to collaborate on the code, basically it let's me see what you write in your IDE without sharing the entire screen (as a big laggy crappy image).
-Here are the steps you need to follow:
-- Open this project in your Android Studio
-- Go to File > Settings > Plugins
-- Click on the gear icon on the top right corner
-- Click on Manage Plugin Repositories...
-- Click on plus sign and add this url as a repository `https://plugins.jetbrains.com/androidstudio`
-- Click OK
-- Go to Marketplace tab on the plugin page
-- Type **GitLive** in search bar
-- Click Install and let it download and install it
-- You probably will have to restart your IDE afterwards
+  - Clone it
+  - Open it in Android Studio
+  - Let it download its dependencies
+  - Make the project once (since we have some intermediate classes which need to be generated)
+  - Explore the questions we will work on by searching `Q(\d)+:` as a regex.
+  - Chill :)
 
-#### I wasn't able to install GitLive, what do I do?
-[This](http://letmegooglethat.com/?q=How+to+install+GitLive+on+Android+Studio) might help.
+#### What's the interview like?
 
-#### I installed GitLive on my Android Studio like a boss
-Awesome.
-- Now click on GitLive on the bottom bar (in the IDE) and sign-in using your Github account.
-- Then **send me** your github username so I can add you to the project.
-- After I've done so, you should be able to see me ([Ali Lotfi](https://github.com/alilotfi/)) down there.
-  - If it is the case, you're good to go. You don't need to do anything else till our appointment. 
-  - If it is not the case, let me know. We'll figure it out.
+We've tried to make the interview similar to our day-to-day work environment as much as it's
+possible. It means that:
+
+  - You would have access to Internet, stackoverflow, official documentations, your other code
+    bases, ...
+  - There's no penalty for searching the internet or copy pasting code from other sources. There's
+    only a penalty for not succeeding to solve the problem.
+  - We have not memorized all of the Android's APIs, we do not value memorizing them, and we don't
+    expect you to have them memorized. We're developers too.
+  - Since the interview might take an hour or two, please feel free to have a break during it and
+    pour yourself a cup of coffee, play a music in the background or anything else that you would
+    do during actual work days. It's just a normal coding session, not a big deal.
+  - During the interview we will ask you to share your screen with us. If this makes you nervous or
+    you don't feel comfortable doing this, you can stop sharing your screen, work on the problem as
+    you might, and just share your screen when you feel confident about your solution to the
+    question at hand. We will discuss your solution and then move on to the next question.
